@@ -1,0 +1,67 @@
+{
+  "project_info": {
+    "project_number": "631259929796",
+    "project_id": "iga-app-b13f5",
+    "storage_bucket": "iga-app-b13f5.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:631259929796:android:1d4f71031c614f4f7c3d91",
+        "android_client_info": {
+          "package_name": "com.example.iga"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBqhpBgyVeBIbIDgd1qYHr1Bfea4rB6PFM"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:631259929796:android:197e7e980129b6ee7c3d91",
+        "android_client_info": {
+          "package_name": "com.example.iga1"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBqhpBgyVeBIbIDgd1qYHr1Bfea4rB6PFM"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:631259929796:android:bcd95f64f44052a47c3d91",
+        "android_client_info": {
+          "package_name": "com.example.igareg"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBqhpBgyVeBIbIDgd1qYHr1Bfea4rB6PFM"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
