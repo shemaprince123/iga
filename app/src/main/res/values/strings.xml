@@ -7,4 +7,20 @@
     <string name="click_to_login">Click_to_Login</string>
     <string name="click_to_register">click_to_register</string>
     <string name="logout">logout</string>
+    <string name="content">
+Chapter 1: Introduction
+
+What is C#?
+C# is pronounced "C-Sharp".
+
+It is an object-oriented programming language created by Microsoft that runs on the .NET Framework.
+
+C# has roots from the C family, and the language is close to other popular languages like C++ and Java.
+
+C# is used for:
+
+> Mobile applications
+> Desktop applications
+> Web applications
+ </string>
 </resources>

@@ -13,6 +13,12 @@
         android:theme="@style/Theme.Igareg"
         tools:targetApi="31">
         <activity
+            android:name=".coursexam"
+            android:exported="false" />
+        <activity
+            android:name=".coursec"
+            android:exported="false" />
+        <activity
             android:name=".course"
             android:exported="false" />
         <activity
