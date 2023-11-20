@@ -13,6 +13,9 @@
         android:theme="@style/Theme.Igareg"
         tools:targetApi="31">
         <activity
+            android:name=".courseres"
+            android:exported="false" />
+        <activity
             android:name=".coursexam"
             android:exported="false" />
         <activity
