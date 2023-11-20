@@ -8,16 +8,173 @@
     android:layout_height="match_parent"
     tools:context=".MainActivity">
 
-    <TextView
-        android:layout_width="wrap_content"
+    <!--    logo and logout and text codes start here -->
+    <LinearLayout
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:id="@+id/user_details"
-        android:text=""/>
+        android:orientation="horizontal"
+        android:gravity="center_vertical">
 
-    <Button
-        android:layout_width="wrap_content"
+        <!-- Logo (ImageView) on the left -->
+        <ImageView
+            android:id="@+id/imageView10"
+            android:layout_width="250dp"
+            android:layout_height="150dp"
+            android:src="@drawable/iga" />
+
+        <!-- Vertical LinearLayout to stack TextView and Button -->
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+            <!-- TextView for Welcome Back -->
+            <TextView
+                android:id="@+id/user_details"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Welcome back" />
+
+            <!-- Button on the right -->
+            <Button
+                android:id="@+id/logout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/logout" />
+        </LinearLayout>
+    </LinearLayout>
+<!--    logo and logout and text codes end here -->
+    ------------------------------------------------------
+
+
+<!--    searching codes layout here -->
+    <LinearLayout
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="@string/logout"
-        android:id="@+id/logout"/>
+        android:orientation="horizontal"
+        android:padding="16dp"
+        android:layout_marginTop="16dp">
+
+
+        <EditText
+            android:id="@+id/editText_search"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="8dp"
+            android:layout_weight="1"
+            android:hint="Search"
+            android:inputType="text"
+            android:maxLines="1"
+            android:minHeight="48dp" />
+
+        <Button
+            android:id="@+id/button_search"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Search" />
+    </LinearLayout>
+    <!--    searching codes layout End here -->
+---------------------------------------------------------
+
+<!--    course text codes here -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:padding="5dp"
+        android:layout_marginTop="5dp">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="1dp"
+            android:layout_weight="1"
+            android:text="Courses"
+            android:gravity="center"
+            android:textSize="28sp"
+            android:textStyle="bold" />
+
+    </LinearLayout>
+    <!--    course text codes here -->
+    -------------------------------------------------------
+
+<!--    courses  content here -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:padding="16dp">
+
+        <!-- First Row -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:orientation="horizontal"
+            android:padding="8dp">
+
+            <!-- First Image (Top Left) -->
+            <ImageView
+                android:id="@+id/imageView1"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:src="@drawable/learn"
+                android:scaleType="centerInside"
+                android:adjustViewBounds="true"
+                android:layout_margin="4dp"
+                android:padding="4dp"
+                />
+
+            <!-- Second Image (Top Right) -->
+            <ImageView
+                android:id="@+id/imageView2"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:src="@drawable/kinya"
+                android:scaleType="centerInside"
+                android:adjustViewBounds="true"
+                android:layout_margin="4dp"
+                android:padding="4dp" />
+        </LinearLayout>
+
+        <!-- Second Row -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:orientation="horizontal">
+
+            <!-- Third Image (Bottom Left) -->
+            <ImageView
+                android:id="@+id/imageView3"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:src="@drawable/data"
+                android:scaleType="centerInside"
+                android:adjustViewBounds="true"
+                android:layout_margin="4dp"
+                android:padding="4dp"
+                />
+
+            <!-- Fourth Image (Bottom Right) -->
+            <ImageView
+                android:id="@+id/imageView4"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:src="@drawable/fullstack"
+                android:scaleType="centerInside"
+                android:adjustViewBounds="true"
+                android:layout_margin="4dp"
+                android:padding="4dp" />
+        </LinearLayout>
+    </LinearLayout>
+
+<!--    course content end here -->
+-------------------------------------------------------------
 
 </LinearLayout>
