@@ -6,7 +6,8 @@
     android:orientation="vertical"
     android:layout_gravity="center"
     android:layout_height="match_parent"
-    tools:context=".MainActivity">
+    tools:context=".MainActivity"
+    tools:ignore="ExtraText">
 
     <!--    logo and logout and text codes start here -->
     <LinearLayout
