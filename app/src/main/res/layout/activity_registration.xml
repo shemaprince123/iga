@@ -9,6 +9,12 @@
     android:padding="15dp"
     tools:context=".Registration">
 
+    <ImageView
+        android:id="@+id/imageView10"
+        android:layout_width="305dp"
+        android:layout_height="203dp"
+        android:src="@drawable/iga" />
+
     <TextView
         android:text="@string/register"
         android:textSize="25sp"
