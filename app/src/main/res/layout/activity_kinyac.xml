@@ -1,20 +1,19 @@
-<LinearLayout
-    xmlns:android="http://schemas.android.com/apk/res/android"
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
-    android:orientation="vertical"
     android:layout_width="match_parent"
-    android:layout_height="wrap_content"
-    android:padding="16dp"
-    tools:ignore="ExtraText"
-    tools:context=".coursec">
+    android:layout_height="match_parent"
+    tools:context=".kinyac">
 
-    ------------------------------------------------------------------------------------
     <!-- Header -->
     <LinearLayout
+        android:id="@+id/headerLayout"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:orientation="horizontal"
-        android:gravity="center_vertical">
+        android:gravity="center_vertical"
+        app:layout_constraintTop_toTopOf="parent">
 
         <!-- Logo -->
         <ImageView
@@ -30,13 +29,6 @@
             android:layout_weight="1"
             android:orientation="vertical">
 
-            <!-- TextView for Welcome Back (if needed) -->
-            <!-- <TextView
-                android:id="@+id/user_details"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="Welcome back" /> -->
-
             <!-- Button (Logout) -->
             <Button
                 android:id="@+id/logout"
@@ -46,39 +38,23 @@
                 tools:ignore="VisualLintButtonSize" />
         </LinearLayout>
     </LinearLayout>
-    ------------------------------------------------------------------------------
 
-    // content course here
+    <!-- Content Section -->
 
-    --------------------------------------------------------------------------------
     <!-- Buttons -->
-
-    <TextView
-        android:id="@+id/contento"
-        android:layout_width="match_parent"
-        android:layout_height="437dp"
-        android:layout_marginTop="16dp"
-
-        android:layout_marginBottom="16dp"
-
-        android:gravity="start"
-        android:text="@string/content"
-        android:textSize="19.5dp"
-        android:textStyle=""
-        tools:ignore="VisualLintLongText" />
-
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:gravity="center"
         android:orientation="horizontal"
-        android:gravity="center">
+        app:layout_constraintBottom_toBottomOf="parent">
 
         <!-- Button on the Left -->
         <Button
             android:id="@+id/button_go_back"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Go Back " />
+            android:text="Go Back" />
 
         <!-- Spacing between buttons -->
         <Space
@@ -94,8 +70,4 @@
             android:text="Done" />
     </LinearLayout>
 
-
-
-
-
-</LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

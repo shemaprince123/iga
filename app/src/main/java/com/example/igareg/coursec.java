@@ -34,6 +34,17 @@ public class coursec extends AppCompatActivity {
                 onBackPressed(); // This will simulate the back button press
             }
         });
+
+        //----------------------------------
+        // Find the TextView where you want to display the content
+        TextView textView = findViewById(R.id.contento);
+
+        // Retrieve the HTML content from strings.xml and set it to the TextView
+        String htmlContent = getString(R.string.content);
+        textView.setText(Html.fromHtml(htmlContent));
+        //------------------------------------------
+
+
     }
 }
 

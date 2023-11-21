@@ -8,19 +8,19 @@
     <string name="click_to_register">click_to_register</string>
     <string name="logout">logout</string>
     <string name="content">
-Chapter 1: Introduction
+    <![CDATA[
+        <p><b>Chapter 1: Introduction</b></p>
+        <p><i>What is C#?</i></p>
+        <p>C# is pronounced "C-Sharp".</p>
+        <p>It is an object-oriented programming language created by Microsoft that runs on the .NET Framework.</p>
+        <p>C# has roots from the C family, and the language is close to other popular languages like C++ and Java.</p>
+        <p>C# is used for:</p>
+        <ul>
+            <li>Mobile applications</li>
+            <li>Desktop applications</li>
+            <li>Web applications</li>
+        </ul>
+    ]]>
+</string>
 
-What is C#?
-C# is pronounced "C-Sharp".
-
-It is an object-oriented programming language created by Microsoft that runs on the .NET Framework.
-
-C# has roots from the C family, and the language is close to other popular languages like C++ and Java.
-
-C# is used for:
-
-> Mobile applications
-> Desktop applications
-> Web applications
- </string>
 </resources>

@@ -1,0 +1,81 @@
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <!-- Header Section with Logout Button -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center_vertical">
+
+        <ImageView
+            android:id="@+id/logoImageView"
+            android:layout_width="286dp"
+            android:layout_height="150dp"
+            android:src="@drawable/iga" />
+
+        <!-- Logout Button -->
+        <Button
+            android:id="@+id/logoutButton"
+            android:layout_width="118dp"
+            android:layout_height="wrap_content"
+            android:text="Logout" />
+    </LinearLayout>
+
+    <!-- Text Content -->
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="IKINYARWANDA"
+        android:textSize="30sp"
+        android:textStyle="bold"
+        android:padding="16dp" />
+
+    <!-- Image -->
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="312dp"
+        android:layout_gravity="center"
+        android:src="@drawable/kinya" />
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:layout_marginBottom="16dp"
+
+        android:text="Embark on your Kinyarwanda language journey with Iga! From beginner to advanced levels.         Join us and explore Kinyarwanda effortlessly!"
+
+        android:gravity="center"
+        android:textSize="18sp"
+        android:textStyle="bold" />
+    <!-- Add this inside your layout -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="8dp"
+        android:gravity="center">
+
+        <!-- Button 1 (Enroll Now) -->
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Enroll Now" />
+
+        <!-- Spacing between buttons -->
+        <Space
+            android:layout_width="60dp"
+            android:layout_height="0dp" />
+
+        <!-- Button 2 (Subscribe) -->
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Subscribe" />
+    </LinearLayout>
+
+</LinearLayout>
