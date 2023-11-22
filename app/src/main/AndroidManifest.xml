@@ -13,6 +13,30 @@
         android:theme="@style/Theme.Igareg"
         tools:targetApi="31">
         <activity
+            android:name=".fsdres"
+            android:exported="false" />
+        <activity
+            android:name=".fsdxam"
+            android:exported="false" />
+        <activity
+            android:name=".fsdc"
+            android:exported="false" />
+        <activity
+            android:name=".fsd"
+            android:exported="false" />
+        <activity
+            android:name=".datres"
+            android:exported="false" />
+        <activity
+            android:name=".datxam"
+            android:exported="false" />
+        <activity
+            android:name=".datc"
+            android:exported="false" />
+        <activity
+            android:name=".dat"
+            android:exported="false" />
+        <activity
             android:name=".kinyares"
             android:exported="false" />
         <activity

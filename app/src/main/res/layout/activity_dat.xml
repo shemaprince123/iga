@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="16dp">
+
+    <!-- Header -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center_vertical">
+
+        <!-- Logo -->
+        <ImageView
+            android:id="@+id/imageView10"
+            android:layout_width="250dp"
+            android:layout_height="150dp"
+            android:src="@drawable/iga" />
+
+        <!-- Vertical LinearLayout to stack TextView and Button -->
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+            <!-- TextView for Welcome Back (if needed) -->
+            <!-- <TextView
+                android:id="@+id/user_details"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Welcome back" /> -->
+
+            <!-- Button (Logout) -->
+            <Button
+                android:id="@+id/logout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/logout" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <!-- Course Name -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:padding="1dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginBottom="8dp">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+
+            android:layout_weight="1"
+            android:text="Learn Data Structures "
+            android:gravity="center"
+            android:textSize="28sp"
+            android:textStyle="bold" />
+    </LinearLayout>
+
+    <!-- Image for the course -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="340dp"
+            android:layout_gravity="end"
+            android:contentDescription="Image Description"
+            android:src="@drawable/data"
+            android:adjustViewBounds="true" />
+    </LinearLayout>
+
+    <!-- Small Text -->
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:layout_marginBottom="16dp"
+        android:text=" Dive into algorithms, data structures, and problem-solving techniques. Get hands-on practice with challenges and expert guidance."
+        android:gravity="center"
+        android:textSize="18sp"
+        android:textStyle="bold" />
+
+    <!-- Buttons -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center">
+
+        <!-- Button on the Left -->
+        <Button
+            android:id="@+id/button_enroll_now"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Enroll Now"
+            tools:ignore="TouchTargetSizeCheck" />
+
+        <!-- Spacing between buttons -->
+        <Space
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1" />
+
+        <!-- Button on the Right -->
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Subscribe"
+            tools:ignore="TouchTargetSizeCheck" />
+    </LinearLayout>
+
+</LinearLayout>

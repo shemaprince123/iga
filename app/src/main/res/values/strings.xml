@@ -23,5 +23,7 @@
     ]]>
 </string>
     <string name="kinyacontent">add content here in strings.xml using even the java codes  \n</string>
+    <string name="datcontent">content for data structure course \n</string>
+    <string name="fsdcontent">full stack content here add it up\n</string>
 
 </resources>

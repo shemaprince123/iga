@@ -1,0 +1,81 @@
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="16dp"
+    tools:ignore="ExtraText">
+
+    <!-- Header -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center_vertical">
+
+        <!-- Logo -->
+        <ImageView
+            android:id="@+id/imageView10"
+            android:layout_width="250dp"
+            android:layout_height="150dp"
+            android:src="@drawable/iga" />
+
+        <!-- Vertical LinearLayout to stack TextView and Button -->
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+            <!-- Button (Logout) -->
+            <Button
+                android:id="@+id/logout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/logout"
+                tools:ignore="VisualLintButtonSize" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <!-- Course content -->
+    <TextView
+        android:id="@+id/datcontento"
+        android:layout_width="match_parent"
+        android:layout_height="449dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginBottom="16dp"
+        android:gravity="start"
+        android:text="@string/datcontent"
+        android:textSize="19.5dp"
+        android:textStyle=""
+        tools:ignore="VisualLintLongText" />
+
+    <!-- Buttons -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center">
+
+        <!-- Button on the Left -->
+        <Button
+            android:id="@+id/button_go_back"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Go Back " />
+
+        <!-- Spacing between buttons -->
+        <Space
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1" />
+
+        <!-- Button on the Right -->
+        <Button
+            android:id="@+id/button_done"
+            android:layout_width="106dp"
+            android:layout_height="wrap_content"
+            android:text="Done" />
+    </LinearLayout>
+</LinearLayout>
