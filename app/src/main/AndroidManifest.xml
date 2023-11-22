@@ -13,6 +13,12 @@
         android:theme="@style/Theme.Igareg"
         tools:targetApi="31">
         <activity
+            android:name=".kinyares"
+            android:exported="false" />
+        <activity
+            android:name=".kinyaxam"
+            android:exported="false" />
+        <activity
             android:name=".kinyac"
             android:exported="false" />
         <activity

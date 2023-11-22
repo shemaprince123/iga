@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <!-- Header Section -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical">
+
+        <!-- Logo -->
+        <ImageView
+            android:id="@+id/logoImageView"
+            android:layout_width="250dp"
+            android:layout_height="150dp"
+            android:src="@drawable/iga" />
+
+        <!-- Logout Button -->
+        <Button
+            android:id="@+id/logoutButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/logout" />
+    </LinearLayout>
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Kinyarwanda Course Assessment"
+        android:textSize="27sp"
+        android:layout_gravity="center"
+        android:textStyle="bold" />
+
+
+    <!-- First Multiple Choice Question Section -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="16dp">
+
+        <!-- Question 1 -->
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Ibyo ari byinshi?"
+            android:textSize="18sp"
+            android:textStyle="bold" />
+
+        <!-- Options 1 -->
+        <RadioButton
+            android:id="@+id/optionARadioButton1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="A. Yego" />
+
+        <RadioButton
+            android:id="@+id/optionBRadioButton1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="B. Oya" />
+
+        <RadioButton
+            android:id="@+id/optionCRadioButton1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="C. Sinzibagirwa" />
+
+        <RadioButton
+            android:id="@+id/optionDRadioButton1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="D. Si byiza" />
+    </LinearLayout>
+
+    <!-- Second Multiple Choice Question Section -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="16dp">
+
+        <!-- Question 2 -->
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Igitabo cy'inyarwanda kiba?"
+            android:textSize="18sp"
+            android:textStyle="bold" />
+
+        <!-- Options 2 -->
+        <RadioButton
+            android:id="@+id/optionARadioButton2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="A. Yego" />
+
+        <RadioButton
+            android:id="@+id/optionBRadioButton2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="B. Oya" />
+
+        <RadioButton
+            android:id="@+id/optionCRadioButton2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="C. Ntibikurikira" />
+
+        <RadioButton
+            android:id="@+id/optionDRadioButton2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="D. Iby'ukuri" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center">
+
+        <!-- Button on the Left -->
+        <Button
+            android:id="@+id/doneButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Done " />
+    </LinearLayout>
+
+</LinearLayout>
+
+
+
+
+<!--    Replace the content of @string/logout,
+ @string/kinyarwanda_course_assessment,
+ @string/question_1, @string/question_2,
+ @string/option_a, @string/done with the
+ appropriate string resources in your strings.xml file-->

@@ -40,6 +40,20 @@
     </LinearLayout>
 
     <!-- Content Section -->
+    <TextView
+        android:id="@+id/kinyacontento"
+        android:layout_width="403dp"
+        android:layout_height="467dp"
+        android:layout_marginTop="16dp"
+        android:gravity="start"
+        android:text="@string/kinyacontent"
+        android:textSize="19.5sp"
+        android:textStyle=""
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/headerLayout"
+        tools:ignore="VisualLintLongText" />
+
 
     <!-- Buttons -->
     <LinearLayout
@@ -47,26 +61,30 @@
         android:layout_height="wrap_content"
         android:gravity="center"
         android:orientation="horizontal"
+        android:layout_marginBottom="32dp"
         app:layout_constraintBottom_toBottomOf="parent">
 
         <!-- Button on the Left -->
+
+        <!-- Spacing between buttons -->
         <Button
             android:id="@+id/button_go_back"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:layout_marginEnd="48dp"
             android:text="Go Back" />
 
-        <!-- Spacing between buttons -->
-        <Space
-            android:layout_width="0dp"
-            android:layout_height="wrap_content"
-            android:layout_weight="1" />
+<!--        <Space-->
+<!--            android:layout_width="8dp"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:layout_weight="1" />-->
 
         <!-- Button on the Right -->
         <Button
             android:id="@+id/button_done"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:layout_marginStart="48dp"
             android:text="Done" />
     </LinearLayout>
 
