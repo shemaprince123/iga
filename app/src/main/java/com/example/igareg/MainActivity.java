@@ -58,5 +58,42 @@ public class MainActivity extends AppCompatActivity {
             }
         });
 
+
+        ImageView imageView2 = findViewById(R.id.imageView2);
+
+        imageView2.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(MainActivity.this, kinya.class);
+                startActivity(intent);
+            }
+        });
+
+
+        ImageView imageView3 = findViewById(R.id.imageView3);
+
+        imageView3.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(MainActivity.this, dat.class);
+                startActivity(intent);
+            }
+        });
+
+
+        ImageView imageView4 = findViewById(R.id.imageView4);
+
+        imageView4.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(MainActivity.this, fsd.class);
+                startActivity(intent);
+            }
+        });
+
+
+
+
+
     }
 }

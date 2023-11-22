@@ -62,6 +62,7 @@
 
         <!-- Button 1 (Enroll Now) -->
         <Button
+            android:id="@+id/enrollNowButton"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="Enroll Now" />

@@ -68,7 +68,7 @@
 
         <!-- Spacing between buttons -->
         <Button
-            android:id="@+id/button_go_back"
+            android:id="@+id/button_go_back_kinyac"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginEnd="48dp"
@@ -81,7 +81,7 @@
 
         <!-- Button on the Right -->
         <Button
-            android:id="@+id/button_done"
+            android:id="@+id/button_done_kinyac"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginStart="48dp"
