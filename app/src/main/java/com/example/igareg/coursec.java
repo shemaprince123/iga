@@ -9,7 +9,11 @@ import android.view.View;
 import android.widget.Button;
 import android.widget.TextView;
 
+import com.google.firebase.auth.FirebaseAuth;
+
 public class coursec extends AppCompatActivity {
+    Button button;
+
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -44,6 +48,17 @@ public class coursec extends AppCompatActivity {
         textView.setText(Html.fromHtml(htmlContent));
         //------------------------------------------
 
+
+        button = findViewById(R.id.logout);
+        button.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                FirebaseAuth.getInstance().signOut();
+                Intent intent  = new Intent(getApplicationContext(), Login.class);
+                startActivity(intent);
+                finish();
+            }
+        });
 
     }
 }

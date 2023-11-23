@@ -7,7 +7,13 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 
+import com.google.firebase.auth.FirebaseAuth;
+
 public class fsd extends AppCompatActivity {
+
+    Button button;
+
+
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -22,6 +28,19 @@ public class fsd extends AppCompatActivity {
                 startActivity(intent);
             }
         });
+
+        //logoutButton
+        button = findViewById(R.id.logout);
+        button.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                FirebaseAuth.getInstance().signOut();
+                Intent intent  = new Intent(getApplicationContext(), Login.class);
+                startActivity(intent);
+                finish();
+            }
+        });
+
 
     }
 }

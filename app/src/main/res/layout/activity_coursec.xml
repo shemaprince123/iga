@@ -56,14 +56,14 @@
     <TextView
         android:id="@+id/contento"
         android:layout_width="match_parent"
-        android:layout_height="437dp"
+        android:layout_height="471dp"
         android:layout_marginTop="16dp"
 
         android:layout_marginBottom="16dp"
 
         android:gravity="start"
         android:text="@string/content"
-        android:textSize="19.5dp"
+        android:textSize="19dp"
         android:textStyle=""
         tools:ignore="VisualLintLongText" />
 

@@ -83,7 +83,7 @@
         android:layout_height="wrap_content"
         android:layout_marginTop="16dp"
         android:layout_marginBottom="16dp"
-        android:text="Learn Microsoft’s popular C# programming language, used to make websites, mobile apps, video games, VR, and more."
+        android:text="Embark on full-stack web development, mastering technologies for websites, apps, games, VR, and more in our immersive course."
         android:gravity="center"
         android:textSize="18sp"
         android:textStyle="bold" />

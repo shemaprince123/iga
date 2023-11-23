@@ -7,7 +7,11 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 
+import com.google.firebase.auth.FirebaseAuth;
+
 public class courseres extends AppCompatActivity {
+    Button button;
+
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -24,6 +28,17 @@ public class courseres extends AppCompatActivity {
                 // Intent to navigate back to MainActivity
                 Intent intent = new Intent(courseres.this, MainActivity.class);
                 startActivity(intent);
+            }
+        });
+
+        button = findViewById(R.id.logout);
+        button.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                FirebaseAuth.getInstance().signOut();
+                Intent intent  = new Intent(getApplicationContext(), Login.class);
+                startActivity(intent);
+                finish();
             }
         });
     }

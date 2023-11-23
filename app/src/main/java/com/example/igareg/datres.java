@@ -7,7 +7,11 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 
+import com.google.firebase.auth.FirebaseAuth;
+
 public class datres extends AppCompatActivity {
+
+    Button button;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -21,6 +25,17 @@ public class datres extends AppCompatActivity {
             public void onClick(View v) {
                 Intent intent = new Intent(datres.this, MainActivity.class);
                 startActivity(intent);
+            }
+        });
+
+        button = findViewById(R.id.logoutButton);
+        button.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                FirebaseAuth.getInstance().signOut();
+                Intent intent  = new Intent(getApplicationContext(), Login.class);
+                startActivity(intent);
+                finish();
             }
         });
 
