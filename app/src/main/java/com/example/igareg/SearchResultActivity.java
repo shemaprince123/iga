@@ -29,24 +29,21 @@ public class SearchResultActivity extends AppCompatActivity {
 
         // Loop through the ImageViews and check for matching tags
         for (int i = 0; i < coursesLayout.getChildCount(); i++) {
-            if (coursesLayout.getChildAt(i) instanceof LinearLayout) {
-                LinearLayout rowLayout = (LinearLayout) coursesLayout.getChildAt(i);
-                for (int j = 0; j < rowLayout.getChildCount(); j++) {
-                    if (rowLayout.getChildAt(j) instanceof ImageView) {
-                        ImageView imageView = (ImageView) rowLayout.getChildAt(j);
-                        String tag = String.valueOf(imageView.getTag());
+            if (coursesLayout.getChildAt(i) instanceof ImageView) {
+                ImageView imageView = (ImageView) coursesLayout.getChildAt(i);
+                String tag = String.valueOf(imageView.getTag());
 
-                        // Check if the tag matches the search query
-                        if (tag != null && tag.toLowerCase().contains(searchQuery.toLowerCase())) {
-                            // Create a new ImageView and set its properties to match the matched ImageView
-                            ImageView resultImageView = new ImageView(this);
-                            resultImageView.setLayoutParams(imageView.getLayoutParams());
-                            resultImageView.setImageDrawable(imageView.getDrawable());
+                // Check if the tag matches the search query
+                if (tag != null && tag.toLowerCase().contains(searchQuery.toLowerCase())) {
+                    // Create a new ImageView and set its properties to match the matched ImageView
+                    ImageView resultImageView = new ImageView(this);
+                    resultImageView.setLayoutParams(new LinearLayout.LayoutParams(
+                            LinearLayout.LayoutParams.WRAP_CONTENT,
+                            LinearLayout.LayoutParams.WRAP_CONTENT));
+                    resultImageView.setImageDrawable(imageView.getDrawable());
 
-                            // Add the matched ImageView to the resultsLayout
-                            resultsLayout.addView(resultImageView);
-                        }
-                    }
+                    // Add the matched ImageView to the resultsLayout
+                    resultsLayout.addView(resultImageView);
                 }
             }
         }
