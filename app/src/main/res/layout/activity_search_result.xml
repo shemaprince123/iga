@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".SearchResultActivity">
+
+    <!-- Header Section -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical">
+
+        <!-- Logo -->
+        <ImageView
+            android:id="@+id/logoImageView"
+            android:layout_width="250dp"
+            android:layout_height="150dp"
+            android:src="@drawable/iga" />
+
+        <!-- Logout Button -->
+        <Button
+            android:id="@+id/logoutButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/logout" />
+    </LinearLayout>
+
+    <!-- Search Results Title -->
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="50dp"
+        android:text="Search Results"
+        android:textSize="27sp"
+        android:textStyle="bold" />
+
+    <!-- Placeholder for Search Results -->
+    <!-- You can dynamically populate this section with search results programmatically -->
+    <LinearLayout
+        android:id="@+id/resultsLayout"
+        android:layout_width="match_parent"
+        android:layout_height="488dp"
+        android:gravity="center_horizontal"
+        android:orientation="vertical"
+        android:padding="16dp">
+
+        <!-- This section will be dynamically populated with search results (ImageViews) -->
+
+    </LinearLayout>
+
+    <!-- coursesLayout to hold course ImageViews (hidden from view, used for search) -->
+    <LinearLayout
+        android:id="@+id/coursesLayout"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:orientation="vertical"
+        android:visibility="gone">
+
+
+        <!-- Define your course ImageViews here with tags for search -->
+        <!-- Example: -->
+             <ImageView
+                 android:id="@+id/imageView1"
+                 android:layout_width="match_parent"
+                 android:layout_height="wrap_content"
+                 android:src="@drawable/learn"
+                 android:tag="learn" />
+             <ImageView
+                android:id="@+id/imageView3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:src="@drawable/data"
+                android:tag="data" />
+             <ImageView
+                android:id="@+id/imageView4"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:src="@drawable/fullstack"
+                android:tag="full" />
+             <ImageView
+                 android:id="@+id/imageView2"
+                 android:layout_width="match_parent"
+                 android:layout_height="wrap_content"
+                 android:src="@drawable/kinya"
+                 android:tag="kinyarwanda" />
+
+
+        <!--... Add more ImageViews with tags as needed -->
+    </LinearLayout>
+</LinearLayout>
