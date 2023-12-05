@@ -6,6 +6,7 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
+import android.widget.TextView;
 
 import com.google.firebase.auth.FirebaseAuth;
 
@@ -20,6 +21,15 @@ public class courseres extends AppCompatActivity {
 
         // Finding the "Back To Home Page" button by its ID
         Button buttonBackToHome = findViewById(R.id.viewResultsButton);
+
+        // Retrieving results from Intent extras
+        Intent intent = getIntent();
+        String result1 = intent.getStringExtra("result1");
+        String result2 = intent.getStringExtra("result2");
+
+        // Displaying results
+        TextView resultTextView = findViewById(R.id.user_details);
+        resultTextView.setText("The Correct answers \n\n Q1 - " + result1 + "\n\n Q2 - " + result2);
 
         // Setting an OnClickListener for the "Back To Home Page" button
         buttonBackToHome.setOnClickListener(new View.OnClickListener() {

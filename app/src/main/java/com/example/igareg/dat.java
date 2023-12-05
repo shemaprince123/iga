@@ -3,6 +3,7 @@ package com.example.igareg;
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.content.Intent;
+import android.net.Uri;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
@@ -37,6 +38,17 @@ public class dat extends AppCompatActivity {
                 Intent intent  = new Intent(getApplicationContext(), Login.class);
                 startActivity(intent);
                 finish();
+            }
+        });
+
+        // Subscribe button to navigate to the pay activity
+        Button buttonSubscribe = findViewById(R.id.subscribe_button);
+        buttonSubscribe.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                // Navigate to the pay activity
+                Intent intent = new Intent(dat.this, pay.class);
+                startActivity(intent);
             }
         });
 

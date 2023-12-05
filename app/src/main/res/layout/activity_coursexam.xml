@@ -47,34 +47,40 @@
         <TextView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="What is the capital of France?"
+            android:text="1. Which keyword define a constant in C#?"
             android:textSize="18sp"
             android:textStyle="bold" />
 
         <!-- Options 1 -->
-        <RadioButton
-            android:id="@+id/optionARadioButton1"
+        <RadioGroup
+            android:id="@+id/radioGroup1"
             android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="A. London" />
+            android:layout_height="wrap_content">
 
-        <RadioButton
-            android:id="@+id/optionBRadioButton1"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="B. Paris" />
+            <RadioButton
+                android:id="@+id/optionARadioButton1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="A)  readonly" />
 
-        <RadioButton
-            android:id="@+id/optionCRadioButton1"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="C. Berlin" />
+            <RadioButton
+                android:id="@+id/optionBRadioButton1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="B) constant" />
 
-        <RadioButton
-            android:id="@+id/optionDRadioButton1"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="D. Madrid" />
+            <RadioButton
+                android:id="@+id/optionCRadioButton1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="C) immutable" />
+
+            <RadioButton
+                android:id="@+id/optionDRadioButton1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="D) const" />
+        </RadioGroup>
     </LinearLayout>
 
     <!-- Second Multiple Choice Question Section -->
@@ -88,35 +94,44 @@
         <TextView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="Which planet is known as the Red Planet?"
+            android:text="2. keyword is used to declare an explicitly"
             android:textSize="18sp"
             android:textStyle="bold" />
 
         <!-- Options 2 -->
-        <RadioButton
-            android:id="@+id/optionARadioButton2"
+        <RadioGroup
+            android:id="@+id/radioGroup2"
             android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="A. Venus" />
+            android:layout_height="wrap_content">
 
-        <RadioButton
-            android:id="@+id/optionBRadioButton2"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="B. Mars" />
+            <RadioButton
+                android:id="@+id/optionARadioButton2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="A) implements" />
 
-        <RadioButton
-            android:id="@+id/optionCRadioButton2"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="C. Jupiter" />
+            <RadioButton
+                android:id="@+id/optionBRadioButton2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="B) explicit" />
 
-        <RadioButton
-            android:id="@+id/optionDRadioButton2"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="D. Saturn" />
-    </LinearLayout>
+            <RadioButton
+                android:id="@+id/optionCRadioButton2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="C) interface" />
+
+            <RadioButton
+                android:id="@+id/optionDRadioButton2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="D) this" />
+        </RadioGroup>
+
+
+
+</LinearLayout>
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"

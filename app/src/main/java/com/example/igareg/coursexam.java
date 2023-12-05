@@ -28,6 +28,9 @@ public class coursexam extends AppCompatActivity {
             public void onClick(View v) {
                 // Intent to navigate to courseres
                 Intent intent = new Intent(coursexam.this, courseres.class);
+                // Sending the results to courseres activity
+                intent.putExtra("result1", "A");
+                intent.putExtra("result2", "A");
                 startActivity(intent);
             }
         });

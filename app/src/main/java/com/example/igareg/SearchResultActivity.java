@@ -1,8 +1,11 @@
 package com.example.igareg;
 
 import androidx.appcompat.app.AppCompatActivity;
+
+import android.content.Intent;
 import android.os.Bundle;
 import android.util.Log;
+import android.view.View;
 import android.widget.ImageView;
 import android.widget.LinearLayout;
 import android.widget.TextView;
@@ -44,8 +47,43 @@ public class SearchResultActivity extends AppCompatActivity {
 
                     // Add the matched ImageView to the resultsLayout
                     resultsLayout.addView(resultImageView);
+                    // Set a click listener on the resultImageView to navigate to the corresponding course
+                    resultImageView.setOnClickListener(new View.OnClickListener() {
+                        @Override
+                        public void onClick(View v) {
+                            // Perform the navigation based on the clicked search result
+                            // Get the tag of the clicked ImageView and start the corresponding activity
+                            String clickedTag = String.valueOf(v.getTag());
+                            navigateToCourse(clickedTag);
+                        }
+                    });
                 }
             }
+        }
+    }
+
+    private void navigateToCourse(String tag) {
+        Log.d("SearchResult", "Clicked tag: " + tag);
+        // Depending on the tag or identifier of the clicked search result,
+        // start the corresponding activity here using Intent
+        Intent intent;
+        if (tag != null) {
+            if (tag.equals("imageView1")) {
+                intent = new Intent(SearchResultActivity.this, course.class);
+            } else if (tag.equals("kinyarwanda")) {
+                intent = new Intent(SearchResultActivity.this, kinya.class);
+            } else if (tag.equals("Data")) {
+                intent = new Intent(SearchResultActivity.this, dat.class);
+            } else if (tag.equals("full")) {
+                intent = new Intent(SearchResultActivity.this, fsd.class);
+            } else {
+                // Default action if no match found for tag
+                Log.d("SearchResult", "No matching course found for tag: " + tag);
+                return;
+            }
+            startActivity(intent);
+        } else {
+            Log.d("SearchResult", "Clicked tag is null");
         }
     }
 }
