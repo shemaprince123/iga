@@ -7,21 +7,28 @@
     android:layout_gravity="center"
     android:layout_height="match_parent"
     tools:context=".MainActivity"
+    android:background="#E9ECED"
     tools:ignore="ExtraText">
 
     <!--    logo and logout and text codes start here -->
+    <!--    logo and logout and text codes end here -->
+    ------------------------------------------------------
+
+
+<!--    searching codes layout here -->
     <LinearLayout
-        android:layout_width="match_parent"
+        android:layout_width="373dp"
         android:layout_height="wrap_content"
-        android:orientation="horizontal"
-        android:gravity="center_vertical">
+        android:gravity="center_vertical"
+        android:layout_gravity="center"
+        android:orientation="horizontal">
 
         <!-- Logo (ImageView) on the left -->
         <ImageView
             android:id="@+id/imageView10"
-            android:layout_width="250dp"
+            android:layout_width="230dp"
             android:layout_height="150dp"
-            android:src="@drawable/iga" />
+            android:src="@drawable/transp" />
 
         <!-- Vertical LinearLayout to stack TextView and Button -->
         <LinearLayout
@@ -35,27 +42,26 @@
                 android:id="@+id/user_details"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
+                android:layout_gravity="center"
                 android:text="Welcome back" />
 
             <!-- Button on the right -->
             <Button
                 android:id="@+id/logout"
-                android:layout_width="match_parent"
+                android:layout_width="130dp"
+                android:layout_gravity="center"
                 android:layout_height="wrap_content"
                 android:text="@string/logout" />
         </LinearLayout>
     </LinearLayout>
-<!--    logo and logout and text codes end here -->
-    ------------------------------------------------------
 
-
-<!--    searching codes layout here -->
     <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
+        android:layout_width="377dp"
+        android:layout_height="75dp"
+        android:layout_gravity="center"
+        android:layout_marginTop="16dp"
         android:orientation="horizontal"
-        android:padding="16dp"
-        android:layout_marginTop="16dp">
+        android:padding="16dp">
 
 
         <EditText
@@ -91,6 +97,7 @@
             android:layout_height="match_parent"
             android:layout_marginTop="1dp"
             android:layout_weight="1"
+            android:textColor="@color/black"
             android:text="Courses"
             android:gravity="center"
             android:textSize="28sp"
@@ -104,7 +111,7 @@
     <LinearLayout
         android:id="@+id/coursesLayout"
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
+        android:layout_height="494dp"
         android:orientation="vertical"
         android:padding="16dp">
 
@@ -121,27 +128,26 @@
                 android:id="@+id/imageView1"
                 android:layout_width="0dp"
                 android:layout_height="match_parent"
-                android:layout_weight="1"
-                android:src="@drawable/learn"
-                android:scaleType="centerInside"
-                android:adjustViewBounds="true"
                 android:layout_margin="4dp"
+                android:layout_weight="1"
+                android:adjustViewBounds="true"
                 android:padding="4dp"
-                android:tag="learn"
-                />
+                android:scaleType="centerInside"
+                android:src="@drawable/learn"
+                android:tag="learn" />
 
             <!-- Second Image (Top Right) -->
             <ImageView
                 android:id="@+id/imageView2"
                 android:layout_width="0dp"
                 android:layout_height="match_parent"
-                android:layout_weight="1"
-                android:src="@drawable/kinya"
-                android:scaleType="centerInside"
-                android:adjustViewBounds="true"
                 android:layout_margin="4dp"
+                android:layout_weight="1"
+                android:adjustViewBounds="true"
                 android:padding="4dp"
-                android:tag="kinyarwanda"/>
+                android:scaleType="centerInside"
+                android:src="@drawable/kinya"
+                android:tag="kinyarwanda" />
         </LinearLayout>
 
         <!-- Second Row -->
@@ -156,27 +162,26 @@
                 android:id="@+id/imageView3"
                 android:layout_width="0dp"
                 android:layout_height="match_parent"
-                android:layout_weight="1"
-                android:src="@drawable/data"
-                android:scaleType="centerInside"
-                android:adjustViewBounds="true"
                 android:layout_margin="4dp"
+                android:layout_weight="1"
+                android:adjustViewBounds="true"
                 android:padding="4dp"
-                android:tag="Data"
-                />
+                android:scaleType="centerInside"
+                android:src="@drawable/data"
+                android:tag="Data" />
 
             <!-- Fourth Image (Bottom Right) -->
             <ImageView
                 android:id="@+id/imageView4"
                 android:layout_width="0dp"
                 android:layout_height="match_parent"
-                android:layout_weight="1"
-                android:src="@drawable/fullstack"
-                android:scaleType="centerInside"
-                android:adjustViewBounds="true"
                 android:layout_margin="4dp"
+                android:layout_weight="1"
+                android:adjustViewBounds="true"
                 android:padding="4dp"
-                android:tag="full"/>
+                android:scaleType="centerInside"
+                android:src="@drawable/fullstack"
+                android:tag="full" />
         </LinearLayout>
     </LinearLayout>
 

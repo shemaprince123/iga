@@ -26,10 +26,12 @@ public class courseres extends AppCompatActivity {
         Intent intent = getIntent();
         String result1 = intent.getStringExtra("result1");
         String result2 = intent.getStringExtra("result2");
+        String score = intent.getStringExtra("score"); // Retrieve the score
+
 
         // Displaying results
         TextView resultTextView = findViewById(R.id.user_details);
-        resultTextView.setText("The Correct answers \n\n Q1 - " + result1 + "\n\n Q2 - " + result2);
+        resultTextView.setText("The Correct answers \n\n Q1 - " + result1 + "\n\n Q2 - " + result2 + "\n\n Score: " + score);
 
         // Setting an OnClickListener for the "Back To Home Page" button
         buttonBackToHome.setOnClickListener(new View.OnClickListener() {
